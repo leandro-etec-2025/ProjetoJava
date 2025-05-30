@@ -3,34 +3,21 @@ public class ClassePrincipal {
 
 	// Método chamado main
 	public static void main(String[] args) {
-
-		ClassePessoas objetoPessoa1 = new ClassePessoas();
-		ClassePessoas objetoPessoa2 = new ClassePessoas();
+	
+		// Instanciei a classe alunos
+		ClasseAlunos mikaelObj = new ClasseAlunos(); // Objeto 1
+		ClasseAlunos abraaoObj = new ClasseAlunos(); // Objeto 2
 		
-		objetoPessoa1.receberNomeMet("Mel");
-		objetoPessoa1.receberRendaMet(15_000);
+		// Funciona, mas está errado
+		mikaelObj.nomeAt = "Mikael";
+		mikaelObj.cursoAt = "Informática";
+		mikaelObj.notaAt = 8.5F;
 		
-		objetoPessoa2.receberNomeMet("Ryan");
-		objetoPessoa2.receberRendaMet(15_000);
-		
-		objetoPessoa1.mostrarNomeMet();
-		objetoPessoa1.mostrarRendaMet();
-		
-		objetoPessoa2.mostrarNomeMet();
-		objetoPessoa2.mostrarRendaMet();
-		
-		ClasseFuncionario objetoFuncionario1 =  new ClasseFuncionario();
-		objetoFuncionario1.receberNomeMet("Miguel");
-		objetoFuncionario1.receberRendaMet(50_000);
-		objetoFuncionario1.cargoAt = "CEO";
+		// Funciona, mas está errado
+		System.out.println(mikaelObj.nomeAt); // sysout CTRL + SPACE
+		System.out.println(mikaelObj.cursoAt);
+		System.out.println(mikaelObj.notaAt);
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-
 }
