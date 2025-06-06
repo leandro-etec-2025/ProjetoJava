@@ -24,6 +24,22 @@ public class ClassePessoas {
 		this.idadeAt = age;
 	}
 	
+	public void mostrarNome() {
+		System.out.println(this.nomeAt); // sysout CTRL SPACE;
+	}
+	
+	public void mostrarIdade() {
+		System.out.println(this.idadeAt); // sysout CTRL SPACE;
+	}
+	
+	public String retornarNome() {
+		return this.nomeAt;
+	}
+	
+	public int retornarIdade() {
+		return this.idadeAt;
+	}
+	
 }
 
 
