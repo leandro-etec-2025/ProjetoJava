@@ -1,31 +1,15 @@
 
-public class ClasseAlunos {
-	String nomeAt; // Abaixo da class é atributo é não var
+public class ClasseAlunos extends ClassePessoas{
+	
+	// Atributo
 	float notaAt; 
 	String cursoAt;
 	
-	// Método para mostrar nome
-	public void mostrarNomeMet() {
-		System.out.println(this.nomeAt);
+	// Construtor
+	public ClasseAlunos(String name, int age, int grade, String course) {
+		super(name, age);
+		this.notaAt = grade;
+		this.cursoAt = course;
 	}
 
-	public void mostrarNotaMet() {
-		System.out.println(this.notaAt);
-	}
-	
-	public void mostrarCursoMet() {
-		System.out.println(this.cursoAt);
-	}
-	
-	public void receberNomeMet(String nomePar) {
-		this.nomeAt = nomePar;
-	}
-
-	public void receberNotaMet(float notaPar) {
-		this.notaAt = notaPar;
-	}
-
-	public void receberCursoMet(String cursoPar) {
-		this.cursoAt = cursoPar;
-	}
 }

@@ -1,30 +1,27 @@
 
 public class ClassePessoas {
-
-	// Atributo: Sempre em baixo da class
+	
+	// Atributo
 	String nomeAt;
-	float rendaAt;
+	int idadeAt;
 	
-	// Método
-	public void mostrarNomeMet() {
-		System.out.println(this.nomeAt); // sysout segura CTRL + SPACE
+	// Construtor
+	public ClassePessoas(String n, int i) {
+		this.nomeAt = n;
+		this.idadeAt = i;
 	}
 	
-	public void mostrarRendaMet() {
-		System.out.println(this.rendaAt);
+	public ClassePessoas() {
+		
 	}
 	
-	public void mostrarNomeRendaMet() {
-		System.out.println(this.rendaAt);
-		System.out.println(this.rendaAt);
+	// Métodos
+	public void receberNome(String name) {
+		this.nomeAt = name;
 	}
 	
-	public void receberNomeMet(String nomePar) {
-		this.nomeAt = nomePar;
-	}
-
-	public void receberRendaMet(float rendaPar) {
-		this.rendaAt = rendaPar;
+	public void receberIdade(int age) {
+		this.idadeAt = age;
 	}
 	
 }
