@@ -4,4 +4,6 @@ public class ClasseFuncionario extends ClassePessoas{
 
 	String cargoAt;
 	
+	//
+	
 }
